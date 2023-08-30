@@ -1,0 +1,6 @@
+site_name: Blog fyrir snjallingar
+site_description: Blog vefur fyrir áhugasama um snjallvæðingu heimila og fyrirtækja 
+theme:
+  name: material
+nav:
+  - Home: index.md
