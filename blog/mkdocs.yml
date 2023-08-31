@@ -1,8 +1,69 @@
 site_name: Blog fyrir snjallingar
-site_description: Blog vefur fyrir áhugasama um snjallvæðingu heimila og fyrirtækja 
+site_description: Blog vefur fyrir áhugasama um snjallvæðingu heimila og fyrirtækja
+site_url: https://blog.snjallingur.is
+repo_url: https://github.com/snjallingur/blog/
 theme:
   name: material
   favicon: img/favicon.ico
   logo: img/snjallingur_logo.png
+  locale: is
+  highlightjs: true
+
 nav:
   - Home: index.md
+  - Blog:
+    - blog/posts/hello-world.md
+
+plugins:
+#  - meta
+  - social:
+      cards_layout: default/variant
+      cards_color:
+        fill: "#0FF1CE"
+        text: "#FFFFFF"
+      cards_layout_options:
+        background_color: "#00000000"
+        font_family: Lato
+        logo: img/snjallingur_logo_full_white.png     
+  - blog:
+      blog_dir: blog
+      blog_toc: true
+      post_date_format: full
+      format: "(%m/%d/%y)"
+#      text-align: "right"
+      cards_font: Lato
+      categories_allowed:    
+        - Hitastýringar
+        - Öryggiskerfi
+        - Ljósastýringar
+      archive: true
+      archive_name: Safn
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+copyright: |
+  &copy; 2023 <a href="https://github.com/snjallingur"  target="_blank" rel="noopener">Snjallingur ehf.</a>
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/snjallingur
+#    - icon: fontawesome/brands/twitter
+#      link: https://twitter.com/TheJamesWillett
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/snjallingur

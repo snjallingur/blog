@@ -43,3 +43,7 @@ Thumbs.db
 # gh-pages files #
 ######################
 site
+
+
+blog/.DS_Store
+blog/.cache/

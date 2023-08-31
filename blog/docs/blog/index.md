@@ -1,0 +1,1 @@
+# Blog fyrir áhugasamir um snjallheimili
