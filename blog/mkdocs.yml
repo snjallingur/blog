@@ -28,7 +28,7 @@ nav:
   - Home: index.md
   - Blog:
     - blog/posts/eassee_hledslustod.md
-    - blog/posts/hello-world.md
+ #   - blog/posts/hello-world.md
 
 plugins:
 #  - meta
